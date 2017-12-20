@@ -9,6 +9,10 @@ int main(void)
 	scanf("%d",&spmin);
 	printf("\nstarting time=%d hr:%d min",sthr,stmin);
 	printf("\nstop time=%d hr:%d min",sphr,spmin);
+	if(sphr<sthr)
+	{
+		sphr=sphr+12;
+	}
 	sthr=sthr*60+stmin;
 	sphr=sphr*60+spmin;
 	time=sphr-sthr;
