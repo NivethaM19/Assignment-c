@@ -9,11 +9,11 @@ int main(void)
 	scanf("%s",a);
 	size=strlen(a);
 	m=size-1;
-	for(i=0;i<m;i++)
+	for(i=0;i<=m/2;i++)
 	{
-		temp=a[m-i];
-		a[m-i]=a[i];
-		a[i]=temp;
+		temp=a[i];
+		a[i]=a[m-i];
+		a[m-i]=temp;
 			
 	}
 	printf("\n The reverse of a string:%s",a);
@@ -23,11 +23,11 @@ int main(void)
 	
 		if(a[k]=='a'||a[k]=='e'||a[k]=='i'||a[k]=='o'||a[k]=='u')
 		{
-			for(j=k;j<m;m++)
+			for(j=k;j<size;j++)
 			{
 				a[j]=a[j+1];
 			}
-		m--;
+		size--;
 			
 			
 		}
